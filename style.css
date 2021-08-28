@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2e3c49;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#ticTitle {
+    color: #5737f2;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 2.25rem;
+    transform: translate(-50%, -50%);
+}
+.container {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 110px;
+    width: 110px;
+    background-color: #8ed8eb;
+    color: #313a4b;
+}
+#turn{
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#reset {
+    color: burlywood;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(42, 114, 148);
+    margin: 5px;
+}
+
+#reset:hover {
+    cursor: grabbing;
+    background-color: rgb(11, 207, 165);
+    color: white;
+    transition-duration: 700ms;
+}
+
