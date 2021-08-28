@@ -44,13 +44,13 @@ container.addEventListener("click", (evt) => {
             score[current]++;
             updateScore();
             if (confirm(winningMessage + ",  click ok to play again")) {
-                cleanBoard();
+                clearBoard();
             } else {
                 alert(":(  you werent supposed to do that");
             }
         } else if (clicks == 9) {
             if (confirm("it's a tie!,  click ok to play again.")) {
-                cleanBoard();
+                clearBoard();
             } else {
                 alert(":(  you werent supposed to do that");
             }
