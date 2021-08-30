@@ -16,13 +16,16 @@ let clicks = 0;
 turnMessage.textContent = `Player ${current}'s turn.`;
 
 function updateScore() {
-    x.textContent = score["X"] + ' || ';
+    x.textContent = score["X"] + " || ";
     o.textContent = score["O"];
 }
 
 function clearBoard() {
+    // clear all cells
     for (let i = 0; i < children.length; i++) {
         children[i].innerText = "";
+        //reset clicks count used for tie calc
+        clicks = 0;
     }
 }
 
@@ -46,13 +49,13 @@ container.addEventListener("click", (evt) => {
             if (confirm(winningMessage + ",  click ok to play again")) {
                 clearBoard();
             } else {
-                alert(":(  you werent supposed to do that");
+                clearBoard();
             }
         } else if (clicks == 9) {
             if (confirm("it's a tie!,  click ok to play again.")) {
                 clearBoard();
             } else {
-                alert(":(  you werent supposed to do that");
+                clearBoard();
             }
         }
         // change the turn to o or x
